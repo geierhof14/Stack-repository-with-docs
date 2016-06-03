@@ -1,3 +1,9 @@
+/**
+ * Provides a stack for strings
+ * @author Roman Geierhofer
+ * 
+ */
+
 package at.fhj.itm;
 
 import java.util.EmptyStackException;
@@ -30,7 +36,7 @@ public class StringStack implements Stack
 	/**
 	 * Class Constructor.
 	 * 
-	 * @param m 
+	 * @param m, which set the max. size of stack
 	 */
 	public StringStack (int m){
 		this.maxsize=m;
@@ -39,7 +45,7 @@ public class StringStack implements Stack
 	/**
 	 * tests if the Stack is empty
 	 * 
-	 * @return true or false
+	 * @return true or false, depends if actiosn was successful
 	 */
 	@Override
 	public boolean isEmpty() {
@@ -56,9 +62,9 @@ public class StringStack implements Stack
 	 * if so it places a new item on top
 	 * else throws an IllegalArgumentException()
 	 * 
-	 * @exception IllegalArgumentExeption()
+	 * @exception IllegalArgumentExeption() if Stack is full
 	 * 
-	 * @param item
+	 * @param item String, which should be added
 	 */
 	@Override
 	public void push(String item) {
@@ -75,11 +81,9 @@ public class StringStack implements Stack
 	 * if so it removes the item on top
 	 * else throws an EmptyStackException()
 	 * 
-	 * @exception EmptyStackException()
-	 * 
-	 * @param item
-	 * 
-	 * @return item
+	 * @exception EmptyStackException() if Stack is empty
+	 *  
+	 * @return item of the stack
 	 */
 	@Override
 	public String pop() {

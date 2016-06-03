@@ -1,3 +1,8 @@
+/**
+ * 
+ * @author Roman Geierhofer
+ * Class to test StringStack
+ */
 package at.fhj.itm;
 
 public class Test {
